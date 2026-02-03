@@ -6,8 +6,13 @@ import { Injectable } from '@angular/core';
 export class ExampleService {
 //globalData!:string;
   globalData!:{
-    account:string
-    password:string
+    account:string;
+    password:string;
+
+
   }
   constructor() { }
+
+
+
 }
