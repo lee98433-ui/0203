@@ -3,9 +3,9 @@
 
 
 <label for="">帳號</label>
-<input type="text">
+<input type="text" [(ngModel)]="account">
 
 <label for="">密碼</label>
-<input type="number">
+<input type="number"[(ngModel)]="password">
 
-<button>送出資料</button>
+<button (click)="sendData()">送出資料</button>
