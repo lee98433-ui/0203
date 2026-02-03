@@ -8,6 +8,7 @@ import { APageComponent } from './@conpoment/a-page/a-page.component';
 import { BPageComponent } from './@conpoment/b-page/b-page.component';
 import { OutAComponent } from './@conpoment/out-a/out-a.component';
 import { OutBComponent } from './@conpoment/out-b/out-b.component';
+import { ArrdemoComponent } from './@compoment/arrdemo/arrdemo.component';
 // import { FirstComponent } from './first/first.component';
 
 export const routes: Routes = [
@@ -18,6 +19,6 @@ export const routes: Routes = [
   {path:'a-page',component:APageComponent},
   {path:'b-page',component:BPageComponent},
   {path:'out-a',component:OutAComponent},
-  {path:'out-b',component:OutBComponent}
-
+  {path:'out-b',component:OutBComponent},
+  {path:'arrdemo',component:ArrdemoComponent}
 ];
