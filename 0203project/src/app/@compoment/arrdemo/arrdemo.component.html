@@ -1,1 +1,29 @@
 <p>arrdemo works!</p>
+<!--
+@for(data of arrData2; track $index){
+  <p>{{data}}</p>
+} -->
+
+@for(deta of userArr;track $index){
+  <div class="block1">
+  <h3 style="text-align: center;">{{deta.userName}}</h3>
+  <p>擁有道具</p>
+  @for(deta2 of deta.props;track $index){
+
+  <ul>
+    <li>{{deta2.propsName}}<span>數量:{{deta2.amount}}</span></li>
+  </ul>
+
+
+  }
+  </div>
+}
+
+@if(true){
+  <h1>true顯示</h1>}
+  @else{
+    <h1>false顯示</h1>
+  }
+
+
+
