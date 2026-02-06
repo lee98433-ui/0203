@@ -10,6 +10,8 @@ import { OutAComponent } from './@conpoment/out-a/out-a.component';
 import { OutBComponent } from './@conpoment/out-b/out-b.component';
 import { ArrdemoComponent } from './@compoment/arrdemo/arrdemo.component';
 import { ApiDemo2Component } from './@compoment/api-demo2/api-demo2.component';
+import { ApiDemoComponent } from './@compoment/api-demo/api-demo.component';
+import { ApiDemo3Component } from './@compoment/api-demo3/api-demo3.component';
 // import { FirstComponent } from './first/first.component';
 
 export const routes: Routes = [
@@ -23,4 +25,6 @@ export const routes: Routes = [
   {path:'out-b',component:OutBComponent},
   {path:'arrdemo',component:ArrdemoComponent},
   {path:"apidemo2",component:ApiDemo2Component},
+  {path:"apidemo",component:ApiDemoComponent},
+  {path:"apidemo3",component:ApiDemo3Component},
 ];

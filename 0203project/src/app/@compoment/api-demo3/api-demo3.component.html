@@ -1,0 +1,160 @@
+<div class="background">
+<div class="block1">
+<label class="CYA">Choose your area:</label>
+
+<br>
+
+@for(loc of location;track loc.LocationName){
+  <button class="btn1" (click)="changeLocation(loc)">
+    {{loc?.LocationName}}
+  </button>
+}
+
+<br/><br/>
+<label class="chooseBlock">{{chooseLocation}}的天氣狀況</label>
+</div>
+<hr/>
+
+<div class="card">
+  @for (weatherElement of weather; track weatherElement?.ElementName) {
+    <div class="cardContent">
+      <h3>{{ weatherElement?.ElementName }}</h3>
+
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.Temperature){
+        <div style="font-weight:bold;">溫度:{{weatherElement.Time[0].ElementValue[0].Temperature}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.MaxTemperature){
+        <div>最高溫度:{{weatherElement.Time[0].ElementValue[0].MaxTemperature}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.MinTemperature){
+        <div>最低溫度:{{weatherElement.Time[0].ElementValue[0].MinTemperature}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.DewPoint){
+        <div>露點溫度:{{weatherElement.Time[0].ElementValue[0].DewPoint}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.RelativeHumidity){
+        <div>相對溼度:{{weatherElement.Time[0].ElementValue[0].RelativeHumidity}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.MaxApparentTemperature){
+        <div>最高體感溫度:{{weatherElement.Time[0].ElementValue[0].MaxApparentTemperature}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.MinApparentTemperature){
+        <div>最低體感溫度:{{weatherElement.Time[0].ElementValue[0].MinApparentTemperature}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.MaxComfortIndex){
+        <div>最高舒適度指數:{{weatherElement.Time[0].ElementValue[0].MaxComfortIndex}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.MinComfortIndex){
+        <div>最低舒適度指數:{{weatherElement.Time[0].ElementValue[0].MinComfortIndex}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.WindSpeed){
+        <div>風速:{{weatherElement.Time[0].ElementValue[0].WindSpeed}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.WindDirection){
+        <div>{{weatherElement.Time[0].ElementValue[0].WindDirection}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.ProbabilityOfPrecipitation){
+        <div>{{weatherElement.Time[0].ElementValue[0].ProbabilityOfPrecipitation}}%</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.Weather){
+        <div>天氣現象:{{weatherElement.Time[0].ElementValue[0].Weather}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.WeatherDescription){
+        <div>天氣預報描述:{{weatherElement.Time[0].ElementValue[0].WeatherDescription}}</div>
+      }
+      @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.UVIndex){
+        <div>紫外線指數:{{weatherElement.Time[0].ElementValue[0].UVIndex}}</div>
+      }
+
+    <div>
+@let weatherCode=weatherElement?.Time?.[0]?.ElementValue?.[0]?.WeatherCode;
+@if (weatherCode === '01') {
+  <img src="/img/01.svg">
+} @else if (weatherCode === '02') {
+  <img src="/img/02.svg" />
+} @else if (weatherCode === '03') {
+<img src="/img/03.svg" />
+} @else if (weatherCode === '04') {
+  <img src="/img/04.svg" />
+} @else if (weatherCode === '05') {
+  <img src="/img/05.svg" />
+} @else if (weatherCode === '06') {
+<img src="/img/06.svg" />
+} @else if (weatherCode === '07') {
+  <img src="/img/07.svg" />
+} @else if (weatherCode === '08') {
+  <img src="/img/08.svg" />
+} @else if (weatherCode === '09') {
+<img src="/img/09.svg" />
+} @else if (weatherCode === '10') {
+  <img src="/img/10.svg" />
+} @else if (weatherCode === '11') {
+  <img src="/img/11.svg" />
+} @else if (weatherCode === '12') {
+<img src="/img/12.svg" />
+} @else if (weatherCode === '13') {
+  <img src="/img/13.svg" />
+} @else if (weatherCode === '14') {
+<img src="/img/14.svg" />
+} @else if (weatherCode === '15') {
+  <img src="/img/15.svg" />
+} @else if (weatherCode === '16') {
+  <img src="/img/16.svg" />
+} @else if (weatherCode === '17') {
+<img src="/img/17.svg" />
+} @else if (weatherCode === '18') {
+  <img src="/img/18.svg" />
+} @else if (weatherCode === '19') {
+<img src="/img/19.svg" />
+} @else if (weatherCode === '20') {
+  <img src="/img/20.svg" />
+} @else if (weatherCode === '21') {
+  <img src="/img/21.svg" />
+} @else if (weatherCode === '22') {
+  <img src="/img/22.svg" />
+} @else if (weatherCode === '23') {
+<img src="/img/23.svg" />
+} @else if (weatherCode === '24') {
+  <img src="/img/24.svg" />
+} @else if (weatherCode === '25') {
+<img src="/img/25.svg" />
+} @else if (weatherCode === '26') {
+  <img src="/img/26.svg" />
+} @else if (weatherCode === '27') {
+  <img src="/img/27.svg" />
+} @else if (weatherCode === '28') {
+<img src="/img/28.svg" />
+} @else if (weatherCode === '29') {
+  <img src="/img/29.svg" />
+} @else if (weatherCode === '30') {
+<img src="/img/30.svg" />
+} @else if (weatherCode === '31') {
+  <img src="/img/31.svg" />
+} @else if (weatherCode === '32') {
+  <img src="/img/32.svg" />
+} @else if (weatherCode === '33') {
+  <img src="/img/33.svg" />
+} @else if (weatherCode === '34') {
+<img src="/img/34.svg" />
+} @else if (weatherCode === '35') {
+  <img src="/img/35.svg" />
+} @else if (weatherCode === '36') {
+<img src="/img/36.svg" />
+} @else if (weatherCode === '37') {
+  <img src="/img/38.svg" />
+} @else if (weatherCode === '39') {
+  <img src="/img/39.svg" />
+} @else if (weatherCode === '41') {
+  <img src="/img/41.svg" />
+} @else if (weatherCode === '42') {
+  <img src="/img/42.svg" />
+} @else {}
+</div>
+
+    </div>
+
+
+}
+
+</div>
+</div>

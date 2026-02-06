@@ -1,0 +1,64 @@
+// .background{
+//   background-color:rgb(102, 69, 248);
+// }
+.CYA{
+  font-size: 23px;
+  font-weight: bold;
+  padding: 5px;
+  color: #ffddf4;
+  margin: 10px;
+}
+
+.card{
+  display: flex;
+
+  flex-wrap: wrap;
+  background-image:url("/img/unnamed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content:center;
+  padding:0 25%;
+
+}
+
+.cardContent{
+  border: 2px solid #000;
+  min-width: 30%;
+  margin: 5px;
+  padding: 5px;
+  color: rgb(0, 132, 255);
+  background-color: rgb(200, 236, 252);
+  text-align: center;
+  align-content:center;
+  border-radius: 10px;
+}
+.cardContent:hover{
+  transform: scale(1.1);
+  transition: 0.3s ease 0s;
+}
+.btn1{
+  border-radius: 5px;
+  margin: 5px 5px;
+  color:rgb(29, 29, 77);
+  background-color: cyan;
+  margin-top: 20px;
+  width: 5%;
+  height: 3%;
+}
+
+.block1{
+
+margin-left: 10%;
+width: 80%;
+align-content:center;
+text-align: center;
+}
+
+.chooseBlock{
+  background-color: rgb(203, 133, 233);
+  color: white;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight:bold;
+  padding:5px;
+}
