@@ -13,9 +13,12 @@
 <br/><br/>
 <label class="chooseBlock">{{chooseLocation}}的天氣狀況</label>
 </div>
+<br>
 <hr/>
 
 <div class="card">
+  <br>
+  <br>
   @for (weatherElement of weather; track weatherElement?.ElementName) {
     <div class="cardContent">
       <h3>{{ weatherElement?.ElementName }}</h3>
