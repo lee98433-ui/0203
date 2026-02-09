@@ -21,7 +21,7 @@
       <h3>{{ weatherElement?.ElementName }}</h3>
 
       @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.Temperature){
-        <div style="font-weight:bold;">溫度:{{weatherElement.Time[0].ElementValue[0].Temperature}}</div>
+        <div>溫度:{{weatherElement.Time[0].ElementValue[0].Temperature}}</div>
       }
       @if (weatherElement?.Time?.[0]?.ElementValue?.[0]?.MaxTemperature){
         <div>最高溫度:{{weatherElement.Time[0].ElementValue[0].MaxTemperature}}</div>
